@@ -11,4 +11,9 @@ export default class About extends Component{
   componentWillUnmount(){
     
   }
+  render(){
+    return(
+      <div>About</div>
+    )
+  }
 }

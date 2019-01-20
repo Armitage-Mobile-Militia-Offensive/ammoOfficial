@@ -38,6 +38,7 @@ export class Home extends Component{
             <a style={{color: '#F59B45', paddingLeft: '5px'}} className="nav-text" href="https://robertsspaceindustries.com/orgs/AMMO">
              {'https://robertsspaceindustries.com/orgs/AMMO'}
             </a>
+            <div className="text-muted" style={{fontSize: '0.75rem'}}>This site is not endorsed by or affiliated with the Cloud Imperium or Roberts Space Industries group of companies. All game content and materials are copyright Cloud Imperium Rights LLC and Cloud Imperium Rights Ltd.. Star Citizen®, Squadron 42®, Roberts Space Industries®, and Cloud Imperium® are registered trademarks of Cloud Imperium Rights LLC. All rights reserved.</div>
           </div>
         </div>
       )
