@@ -7,14 +7,13 @@ export class Navbar extends Component{
     }
     render(){
         return(
-            <nav className="navbar fixed-top navbar-dark bg-dark">
+            <nav style={{padding: '0px', marginBottom: '0px'}} className="navbar navbar-expand-sm fixed-top navbar-dark bg-dark">
                 <NavLink to="/" className="navbar-brand" style={{fontFamily: 'Orbitron'}}>Armitage Mobile Militia Offensive</NavLink>
-                <ul className="navbar-nav">
-                    <li><NavLink to="/navy">Navy</NavLink></li>
-                    <li><NavLink to="/shipyard">Shipyard</NavLink></li>
-                    <li><NavLink to="/about">About</NavLink></li>
-                </ul>
-
+                <span className="navbar-nav">
+                    <NavLink className="nav-item nav-link" to="/navy">Navy</NavLink>
+                    <NavLink className="nav-item nav-link" to="/shipyard">Shipyard</NavLink>
+                    <NavLink className="nav-item nav-link" to="/about">About</NavLink>
+                </span>
             </nav>
         )
     }

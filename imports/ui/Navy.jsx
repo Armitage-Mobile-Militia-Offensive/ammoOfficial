@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Navy = () => (
-  <div>
+  <div style={{paddingTop: '35px'}}>
     Navy
   </div>
 )

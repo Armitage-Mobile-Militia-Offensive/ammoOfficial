@@ -6,15 +6,21 @@ import Navy from './ui/Navy'
 import Shipyard from './ui/Shipyard'
 import About from './ui/About'
 
-const Routes = () => {
+const Routes = () => (
     <main>
         <Switch>
             <Route exact path="/" component={Home}/>
             <Route path="/navy" component={Navy}/>
             <Route path="/shipyard" component={Shipyard}/>
-            <Route path="/about" component={About}/>
+            <Route component={About}>
+                <Route path="/about/mission" component={Mission}/>
+                <Route path="/about/history" component={History}/>
+                <Route path="/about/rules" component={Rules}/>
+                <Route path="/about/ranks" component={Ranks}/>
+                <Route path="/about/diplomacy" component={Diplomacy}/>
+            <Route/>
         </Switch>
     </main>
-}
+)
 
 export default Routes

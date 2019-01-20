@@ -1,9 +1,14 @@
-import React from 'react'
+import React, {Component} from 'react'
+import {Link, browserHistory} from 'react-router-dom'
 
-const About = () => (
-  <div>
-    About
-  </div>
-)
+export default class About extends Component{
+  constructor(props){
 
-export default About
+  }
+  componentWillMount(){
+
+  }
+  componentWillUnmount(){
+    
+  }
+}
